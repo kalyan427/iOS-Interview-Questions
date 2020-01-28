@@ -1,3 +1,12 @@
+/* Take three numbers from the user and print the greatest number. Go to the editor
+ 
+ Test Data
+ Input the 1st number: 25
+ Input the 2nd number: 78
+ Input the 3rd number: 87
+ Expected Output :
+ The greatest: 87 */
+
 import UIKit
 
 var value1: Int = 25
@@ -11,5 +20,6 @@ if (value1 > value2 && value1 > value3) {
 } else {
     print("value3 is greater")
 }
+
 
 
