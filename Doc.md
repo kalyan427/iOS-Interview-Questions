@@ -8,8 +8,7 @@
  ###### Struct:
  - Struct are `value type`.for example consider microsoft docs which shared to 2 persons through email.if both persons download to there local machine.then if person1 modifies the document then it doesn't modifies in person2 document.
  - if you use struct parent class into two subclass.if you modify in one subclass it doesn't modifies in parent class and in another subclass.
- 
- 
+
 
     
     
@@ -47,7 +46,6 @@
     
     let sampleStruct2 = Animal2()
     print(sampleStruct2.health2)
- 
- 
 
 
+### App LifeCycle
