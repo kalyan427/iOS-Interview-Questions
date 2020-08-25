@@ -49,3 +49,30 @@
 
 
 ### App LifeCycle
+
+Application life cycle methods contain 6 methods.
+
+1. Applicationdidfinishlaunchingwithoptions.
+1. Applicationwillenterforeground.
+1. Applicationdidbecomeactive.
+1. Applicationwillresignactive.
+1. Applicationdidenterbackground.
+1. Applicationwillterminate.
+
+
+------------
+
+1. initially, when you run your application, it enters into "Applicationdidfinishlaunchingwithoptions," then you can see the application.
+1. In the next step, it comes into the "Applicationdidbecomeactive" method.
+1. when you click the home button, then the "Apllicationwillresignactive" method is called.
+1. if you open the application from the home button. Then the "Applicationdidenterbackground" method is called.
+1. in the next step, it enters into the "Applicationwillenterforeground" method .then it calls the "Applicationdidbecomeactive" method.
+
+
+
+  
+  
+
+
+
+
