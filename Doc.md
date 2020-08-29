@@ -122,6 +122,110 @@ Detail Explaination:
 - transition between `viewDidAppear to viewDidDisAppear` in this process.`viewWillDisAppear` method is called.so whatever the conditions/things to show between in these transition.we can define in this method.
 - `viewDidDisAppear` this method is called once the Appear method is called.these method shows what ever the content need to display before viewController changes to another viewController.
 
+------------
+
+### Conditional/Control Statements
+
+There are following type of conditional statements are present:
+- if else statements.
+- Switch statements.
+- if else if statements.
+
+#### if else statements.
+
+```swift
+var age = 17
+var underAge = 18
+
+if (age < underAge) {
+    print("UnderAge")
+} else {
+    print("Can Sell")
+}
+```
+
+Detailed Description:
+if the condition is true then if statement block is executed. if condition fails then else block condition is called.
+
+#### if,else if statements.
+
+```swift
+var age = 31
+var underAge = 18
+
+if (age < underAge) {
+    print("UnderAge")
+} else if (age <= 30 ) {
+    print("Youth")
+} else {
+    print("Close to Old")
+}
+```
+Detailed Description.
+if the condition is true then if statement block is executed. if condition is between to two values then elseif block is executed.if it is more than that then else block is called.
+
+#### switch statements
+
+```swift
+var age = 18
+
+switch age {
+case 18:
+    print("Under age")
+case 30:
+    print("Youth")
+case 40:
+    print("Old age")
+default:
+    print("Out of box")
+}
+```
+
+Detailed Description:
+in switch statements if any conditions is matched with the cases in switch statement then that particular case is executed.if any of the cases doesn't matches then default case will be executed.
+
+
+------------
+
+#### Optional Chaining
+
+
+------------
+
+#### Optional Chaining
+
+Description:
+- for example,if the user needs to enter marital status when he is entering his martial status is not married.so he need to define as unmarried.may be in future he will marry.then his status will change.
+- consider for example, a spouse.
+
+```swift
+// Optional
+1. var spouseName: String?
+print(spouseName) --> shows `nil`.
+
+// Force unwrapping/optional unwrapping.
+var spouseName: String?
+2. spouseName = "kalyan"
+print(spouseName) --> shows `optional(kalyan)`
+
+// Optional Binding.
+3. if let Spouse = spouseName {
+    let greeting = "Hello," + Spouse
+    print(greeting) --> shows `Hello,kalyan`
+}
+
+```
+
+Detailed Description:
+- In `1` variable is defined with optional value.so that variable do not need to have a data.optional can be defined using `?`.
+- In `2` variable is assigned with some data so that it doesn't shows with nil.now spousename has some value instead of nil.
+- so to overcome from `optional(kalyan)` we will define with `if let` if we use `3` this then if we have data in optional variable then it passes to that code block and print the value.if variable doesn't have value then it doesn't passes to that code block.
+
+
+-> guard statement.
+
+
+
 
 
 
