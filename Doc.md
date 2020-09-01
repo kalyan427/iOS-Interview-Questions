@@ -100,7 +100,9 @@ Detail Explanation:
 - when you click the home button, then the `applicationWillResignActive` method is called.
 -  if you open the application from the home button. Then the `applicationDidEnterBackground` method is called. 
 -  in the next step, it enters into the "`applicationWillEnterForeground` method .then it calls the `applicationDidBecomeActive` method.
+
 ------------
+
 ### View LifeCycle 
 
 
@@ -189,11 +191,6 @@ in switch statements if any conditions is matched with the cases in switch state
 
 #### Optional Chaining
 
-
-------------
-
-#### Optional Chaining
-
 Description:
 - for example,if the user needs to enter marital status when he is entering his martial status is not married.so he need to define as unmarried.may be in future he will marry.then his status will change.
 - consider for example, a spouse.
@@ -222,7 +219,37 @@ Detailed Description:
 - so to overcome from `optional(kalyan)` we will define with `if let` if we use `3` this then if we have data in optional variable then it passes to that code block and print the value.if variable doesn't have value then it doesn't passes to that code block.
 
 
--> guard statement.
+------------
+
+#### Guard Statement
+
+Description:
+Guard statement is alternative to `if let`.It is similar to if else statement. in `if let` if it has data then it passes to that code block, else it passes to else code block.whereas in `Guard` statement if there is data then it passes through that code block or it will return from that code block. 
+
+```swift
+var value:String?
+value = "Hello World"
+
+//  if let
+if let text1 = value {
+    print(text1)
+}
+
+// Guard
+func printValue() {
+    guard let text2 = value else { return }
+    print(value)
+}
+
+printValue()
+
+```
+
+Detail Explaination:
+- in above example in if let, if there is value in `value` variable then it assigns to text1 and passes through code block and prints the value.
+- if it is `guard` keyword,if `value` variable has value then it passes to code block and print the value.if it doesn't have value then it returns from initial code block.
+
+
 
 
 
