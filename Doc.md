@@ -101,6 +101,15 @@ Detail Explanation:
 -  if you open the application from the home button. Then the `applicationDidEnterBackground` method is called. 
 -  in the next step, it enters into the "`applicationWillEnterForeground` method .then it calls the `applicationDidBecomeActive` method.
 
+- **Applicationdidfinishlaunchingwithoptions** is the first method called before the launching the application.this 
+- Once applicationdidfinishlaunchingwithoptions method is called then next method is **Applicationwillenterforeground** method is called.this method becomes active once you answered thephone call or system interruption.
+- **Applicationwillbecomeactive** is called after the transition to foreground.
+- **Applicationwillresignactive** is called when the user gets phone call or uset hits home button.
+- **Applicationwillenterbackground** is called once app enters into background.
+- **Applicationwillterminate** this method is called when the app is going to kill from memory.
+
+ Application life cycle is called when you use **UIAPPLICATIONDELEGATE** protocol.You need to use this protocol to get notify about terminate,background,foreground and if user opens any notification then app can know all this information. 
+
 ------------
 
 ### View LifeCycle 
