@@ -258,6 +258,20 @@ Detail Explaination:
 - in above example in if let, if there is value in `value` variable then it assigns to text1 and passes through code block and prints the value.
 - if it is `guard` keyword,if `value` variable has value then it passes to code block and print the value.if it doesn't have value then it returns from initial code block.
 
+# Data Passing:
+When coming to data passing, data passing means passing data between two view controllers is called data passing.data passing is only a unidirectional not a bidirectional.
+ 
+ Things to remember for data passing:
+
+1. Take a two view controllers one with name “FirstViewController ” and second with “SecondViewController".
+1.  Embed navigation controller for firstviewcontroller and secondviewcontroller.
+1.  In firstviewcontroller take a label and a button.
+1.  In secondviewcontroller take a label.
+1.  Define outlets and actions for label and button for first view controller.
+1.  In button action part define a let property to save the instance of second view controller by defining with identifier.
+1. Then once secondvc instance is declared then use that property to access the function defined in secondviewcontroller and pass the text value to that function.
+1. So you pass the data to secondviewcontroller.
+
 
 
 
