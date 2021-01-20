@@ -272,6 +272,88 @@ When coming to data passing, data passing means passing data between two view co
 1. Then once secondvc instance is declared then use that property to access the function defined in secondviewcontroller and pass the text value to that function.
 1. So you pass the data to secondviewcontroller.
 
+# Difference Between Class & Struct.
+
+### Class
+
+1. Class is reference type.
+1. If you define a variable and inherit the another variable as parent and that another variable which inherit the parent class.
+1. Then in RAM memory is created and all variables shares the same memory.It means all variable refered to the same memory.
+1. So whenever you change the property of a variable then it modifies the value for all variables due to reference type.
+
+```swift
+class Person {
+    var name: String?
+    var height: Int?
+    var hairColor: String?
+}
+
+var mike = Person()
+mike.name = "Stephen"
+
+var spike = mike
+spike.name = "Tiffany"
+
+print(mike.name)
+print(spike.name)
+
+mike.name = "Renamed Stephan"
+
+print(mike.name)
+print(spike.name)
+
+```
+
+###### Output
+
+```swift
+Optional("Tiffany")
+Optional("Tiffany")
+Optional("Renamed Stephan")
+Optional("Renamed Stephan")
+```
+
+### Struct
+
+1. Struct are Value type.
+1. If you define a variable and inherit the another variable as parent and that another variable which inherit the parent class.
+1. Then in RAM memory is created and all variables have diffrent memory allocation.It means all variable allocation is different.
+1. So whenever you change the property of a variable then it modifies the value for that particular variable  and it doesn't changes value for all variables due to value type.
+
+```swift
+
+struct Animal {
+    var type: String?
+    var fur: Bool?
+    var legs: String?
+}
+
+var dog = Animal()
+dog.type = "Dog"
+
+var cat = dog
+cat.type = "Cat"
+
+print(dog.type)
+print(cat.type)
+
+dog.type = "Renamed Dog"
+
+print(dog.type)
+print(cat.type)
+```
+
+###### Output 
+
+```swift
+Optional("Dog")
+Optional("Cat")
+Optional("Renamed Dog")
+Optional("Cat")
+```
+
+
+
 
 
 
