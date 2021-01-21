@@ -352,6 +352,29 @@ Optional("Renamed Dog")
 Optional("Cat")
 ```
 
+# JSON Data Passing
+
+```swift
+// To import json Serialization.
+import Foundation
+
+// JSON Data
+let str = "{\"names\": [\"Mike\",\"Spike\",\"Michelle\"]}"
+
+// JSON serialization likes to accept in utf8 format.
+let data = Data(str.utf8)
+
+//  do catch for error handling.
+do {
+// We will take it as Array format.
+    if let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+        if let names = jsonData["names"] as? [String] {
+            print(names)
+        }
+}
+}
+```
+
 
 
 
