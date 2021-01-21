@@ -375,6 +375,11 @@ do {
 }
 ```
 
+###### Output
+```swift
+["Mike", "Spike", "Michelle"]
+###### ```
+
 
 
 
