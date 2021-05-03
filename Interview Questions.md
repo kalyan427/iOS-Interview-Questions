@@ -381,6 +381,29 @@ do {
 ###### ```
 
 
+## # Key-Value Observing
+1. It will notify to the object change in the properties of other objects.
+1. It is a cocoa programming pattern which notify to the object changes in the properties of other objects.
+1. It is helpful when communicating between two different logically seperated parts like model and view.
+1. key value observing can only be implemented in the class which inherit from NSObject.
+1. kvo depends on obc runtime compiler,you need to use objc class that inherit from NSObject.```swift
+
+import Foundation
+
+class Person: NSObject {
+    @objc dynamic var name = "harsha"
+}a
+
+var kalyan = Person()
+
+kalyan.observe(\Person.name, options: .new) { (person, change) in
+    print("\(person.name)")
+}
+
+kalyan.name = "abc"
+```
+
+
 
 
 
