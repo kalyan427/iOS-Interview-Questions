@@ -443,6 +443,11 @@ kalyan.name = "abc"
 1. Delegate pattern is a one to one relationship.
 1. Delegate allows sending message from one object to another object.
 
+### What are clousures.. What is escaping and Non-Escaping?
+
+1. Closures are self-contained blocks of functionality that can be passed around and used in our code.
+
+
 
 
 
