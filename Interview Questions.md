@@ -406,6 +406,21 @@ kalyan.name = "abc"
 ```
 
 
+### Enums in swift?
+
+1. Enumerations are defined with enum.
+1. Enumerations are data types which contains named values called as a members.
+
+### What is Delegation?
+
+1. Delegation is a design pattern in ios.
+1. it allows to send messages from one 
+1. it is a one to one relationship.which means it communicates one to one.
+1. Delegates is nothing but a protocol.
+1. a protocol which contains a methods.
+```
+
+
 
 
 
