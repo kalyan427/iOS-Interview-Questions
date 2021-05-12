@@ -430,12 +430,21 @@ kalyan.name = "abc"
 #### Disadvantages of singleton.
 
 1. It is global statefullness.
-1. once if project gets bigger then at some point you may need to reset it and sharing it through you whole app doesn't make any sense.
+1. once if project gets bigger then at some point you may need to reset it and sharing it through your whole app doesn't make any sense.
 
 #### Example:
 1.UI kit.
 1. UI Application.
 1. NSFile manager.
+
+
+### # What is view life cycle?
+
+1. Viewdidload()
+1. Viewwillappear()
+1. Viewdidappear()
+1. Viewwilldisappear()
+1. Viewdiddisappear()
 
 
 
