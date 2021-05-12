@@ -437,14 +437,11 @@ kalyan.name = "abc"
 1. UI Application.
 1. NSFile manager.
 
+### What is delegate pattern in iOS?
 
-### # What is view life cycle?
-
-1. Viewdidload()
-1. Viewwillappear()
-1. Viewdidappear()
-1. Viewwilldisappear()
-1. Viewdiddisappear()
+1. Delegate pattern is the variation of the observer pattern.
+1. Delegate pattern is a one to one relationship.
+1. Delegate allows sending message from one object to another object.
 
 
 
