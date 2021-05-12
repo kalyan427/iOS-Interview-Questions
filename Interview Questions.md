@@ -418,7 +418,24 @@ kalyan.name = "abc"
 1. it is a one to one relationship.which means it communicates one to one.
 1. Delegates is nothing but a protocol.
 1. a protocol which contains a methods.
-```
+
+
+### What are singletons and what's a good use case for them in iOS applications?
+
+1. Singleton is a single class instance which you can access in your entire codebase.
+1. A singleton class returns same instance how many times you request.
+1. A singleton object provides a global point of access to the resources of its class.
+1. Singleton is used where single point of control is desirable.
+
+#### Disadvantages of singleton.
+
+1. It is global statefullness.
+1. once if project gets bigger then at some point you may need to reset it and sharing it through you whole app doesn't make any sense.
+
+#### Example:
+1.UI kit.
+1. UI Application.
+1. NSFile manager.
 
 
 
