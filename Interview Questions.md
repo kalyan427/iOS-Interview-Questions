@@ -448,6 +448,27 @@ kalyan.name = "abc"
 1. Closures are self-contained blocks of functionality that can be passed around and used in our code.
 
 
+### MVC vs MVVM
+
+1. MVC stands for model,view,controller where M represents model, V represents UI, C represents Controller.
+1. Data model is connected to view is through "Controller".
+1. In MVC Controller directly manipulates data in given model.
+1. In MVC View and Model doesn't need to know each other.
+
+#### Drawback:
+1. so when an application scales much larger and evolves into an operation with many related models, the amount of controllers used must grow.
+1. where do you put a service object that does HTTP networking? It’s certainly not a view. Is it a model? Nope. Is it a controller? Hmm.. . not really a controller either.
+
+### MVVM
+1. MVVM stands for Model,View and ViewModel.
+1. Unlike mvc viewmodel is not a controller.it acts as binder that bind data between view and model.
+1. it allows view and model to communicate each other directly.
+
+#### Drawback:
+1. Because it relies on data binding, the ViewModel consumes a considerable amount of memory in comparison to it’s controlling counterparts.
+
+
+
 
 
 
