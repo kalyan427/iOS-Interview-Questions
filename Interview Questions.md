@@ -468,6 +468,35 @@ kalyan.name = "abc"
 1. Because it relies on data binding, the ViewModel consumes a considerable amount of memory in comparison to it’s controlling counterparts.
 
 
+## Multithreading and Concurrency:
+
+#### GCD
+
+Grand Central Dispatch is a multi-threaded code without manually creating and managing the threads themselves.
+
+GCD is built on top of threads. Under the hood it manages a shared thread pool. With GCD you add blocks of code or work items to dispatch queues and GCD decides which thread to execute them on. Note that GCD decides how much parallelism is required based on the system and available system.
+
+1. GCD can improve your app’s responsiveness by helping you defer computationally expensive tasks and run them in the background.
+
+#### Sync vs Async
+
+##### Sync
+When your code reaches a sync statement, it will block the current queue until that task completes. Once the task returns/completes, control is returned to the caller, and the code that follows the sync task will continue.
+
+##### Async
+An async statement, on the other hand, will execute asynchronously with respect to the current queue, and immediately returns control back to the caller without waiting for the contents of the async closure to execute. There is no guarantee as to when exactly the code inside that async closure will execute.
+
+
+#### NSOperationQueue
+NSOperationQueue regulates the concurrent execution of operations. It acts as a priority queue, such that operations are executed in a roughly First-In-First-Out manner, with higher-priority (NSOperation.queuePriority) ones getting to jump ahead of lower-priority ones. NSOperationQueue can also limit the maximum number of concurrent operations to be executed at any given moment, using the maxConcurrentOperationCount property.
+
+
+#### How to achieve concurrency in iOS 
+we can achieve concurrency in two ways.
+1. Using Operations and OperationQueues.
+1. Using Grand Central Dispatch(GCD).
+
+
 
 
 
