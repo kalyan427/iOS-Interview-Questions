@@ -497,6 +497,24 @@ we can achieve concurrency in two ways.
 1. Using Grand Central Dispatch(GCD).
 
 
+## Communication Pattern: 
+#### Delegate VS Notifications
+Delegates create a has-a relationship between two classes. It supports two-way communication i.e. we can return the value and it also has a chance to modify or reject the operations as well. It checks protocol methods implementation at compile time. Only one designated object can listen the message. Similar to the telephonic conversation.
+Notification based on one to many communication. It cannot receive feedback and have no link between the objects to communicate back and forth. There is no compile time checking for method implementation. Any number of the object can receive the message.
+
+#### What is KVO (Key-Value Observation)
+KVO stands for Key-Value Observation and provides mechanics
+through which you can observe changes on properties in iOS. In contrast
+to Delegate KVO entails a one-to-many relationship. Multiple objects
+could subscribe to changes in a property of another object. As soon as that property changes, all objects subscribing to it will be notified.
+
+#### What is Delegate pattern in iOS?
+Delegate pattern is a variation of Observer pattern where only one object can observe events coming from another object. That effectively makes Delegate pattern a one-to-one relationship. Delegates are commonly used across iOS frameworks. Two of the arguably most commonly used examples would be and UITableViewDataSource. UITableViewDelegate These are both represented by a protocol that an object conforms to and UITable-View uses the single object it is provided with to send messages/events. Unlike with Observer pattern, there can be only one delegate object.
+
+
+
+
+
 
 
 
