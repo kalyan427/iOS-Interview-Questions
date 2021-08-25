@@ -670,3 +670,9 @@ CoreData:
 
 40. What is Transient Property?
 Transient properties are properties on an NSManagedObject that are not persisted t the object-store. They are calculated at runtime, usually on the basis of other property Values.
+
+41. What is a protocol?
+    1. Protocols are declarations which a adopter should implement.
+    2. A protocol has a methods,properties & operators which a adopter can implement.
+    3. Methods doesn't have any functionality,what ever the adaptor implements can use that and build functionality for  that method. 
+    4. By default everything in swift is required methods.
