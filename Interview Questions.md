@@ -1,17 +1,15 @@
-#### 1001. Classes Vs Struct
+## 1001. Classes Vs Struct
 
-##### Description:
-
-###### Class:
+### Class:
 
 Class are `reference type`.for example consider google sheets which shared to 2 persons.if person1 modifies the sheet then person2 sees the same value in google sheet because it modifies parent class.
 
-###### Struct:
+### Struct:
 
 - Struct are `value type`.for example consider microsoft docs which shared to 2 persons through email.if both persons download to there local machine.then if person1 modifies the document then it doesn't modifies in person2 document.
 - if you use struct parent class into two subclass.if you modify in one subclass it doesn't modifies in parent class and in another subclass.
 
-# Difference Between Class & Struct.
+## Difference Between Class & Struct.
 
 ### Class
 
@@ -43,7 +41,7 @@ print(spike.name)
 
 ```
 
-###### Output
+###Output
 
 ```swift
 Optional("Tiffany")
@@ -82,7 +80,7 @@ print(dog.type)
 print(cat.type)
 ```
 
-###### Output
+### Output
 
 ```swift
 Optional("Dog")
@@ -159,9 +157,9 @@ print(cat.breathesOxygen)
 
 ---
 
-### 1002. App LifeCycle
+## 1002. App LifeCycle
 
-##### Description:
+### Description:
 
 Application life cycle methods contain 6 methods which are responsible for handling the app in various ways. For example If the user clicks on home button the app will go to home page then if we want to do any stuff then we can utilize these methods like `applicationDidEnterBackground` for doing background stuff.
 
@@ -193,9 +191,9 @@ Application life cycle is called when you use **UIAPPLICATIONDELEGATE** protocol
 
 ---
 
-### 1003. View LifeCycle
+## 1003. View LifeCycle
 
-##### Description
+### Description
 
 View life cycle methods are called whenever we enter into a particular viewcontroller depends on our viewcontroller or app.We will write code in that particular viewcontroller method.So that it will do that particular action in that methods depends on the app.Every viewcontroller has viewlifecycle methods.
 
@@ -217,7 +215,7 @@ Detail Explaination:
 
 ---
 
-### Conditional/Control Statements
+## Conditional/Control Statements
 
 There are following type of conditional statements are present:
 
@@ -225,7 +223,7 @@ There are following type of conditional statements are present:
 - Switch statements.
 - if else if statements.
 
-#### if else statements.
+### if else statements.
 
 ```swift
 var age = 17
@@ -241,7 +239,7 @@ if (age < underAge) {
 Detailed Description:
 if the condition is true then if statement block is executed. if condition fails then else block condition is called.
 
-#### if,else if statements.
+### if,else if statements.
 
 ```swift
 var age = 31
@@ -259,7 +257,7 @@ if (age < underAge) {
 Detailed Description.
 if the condition is true then if statement block is executed. if condition is between to two values then elseif block is executed.if it is more than that then else block is called.
 
-#### switch statements
+### switch statements
 
 ```swift
 var age = 18
@@ -281,7 +279,7 @@ in switch statements if any conditions is matched with the cases in switch state
 
 ---
 
-#### 1004. Optional Chaining
+### 1004. Optional Chaining
 
 Optionals: ?
 
@@ -317,7 +315,7 @@ print(spouseName) --> shows `optional(kalyan)`
 }
 ```
 
-#### 1005. Data Passing:
+### 1005. Data Passing:
 
 When coming to data passing, data passing means passing data between two view controllers is called data passing.data passing is only a unidirectional not a bidirectional.
 
@@ -406,20 +404,20 @@ Notification based on one to many communication. It cannot receive feedback and 
 
 
 
-### Enums in swift?
+## Enums in swift?
 
 1. Enumerations are defined with enum.
 1. Enumerations are data types which contains named values called as a members.
 
 
-### 1008. What are singletons and what's a good use case for them in iOS applications?
+## 1008. What are singletons and what's a good use case for them in iOS applications?
 
 1. Singleton is a single class instance which you can access in your entire codebase.
 1. A singleton class returns same instance how many times you request.
 1. A singleton object provides a global point of access to the resources of its class.
 1. Singleton is used where single point of control is desirable.
 
-#### Disadvantages of singleton.
+### Disadvantages of singleton.
 
 1. It is global statefullness.
 1. once if project gets bigger then at some point you may need to reset it and sharing it through your whole app doesn't make any sense.
@@ -429,13 +427,13 @@ Example:
 1. UI Application.
 1. NSFile manager.
 
-### 1009. What is delegate pattern in iOS?
+## 1009. What is delegate pattern in iOS?
 
 1. Delegate pattern is the variation of the observer pattern.
 1. Delegate pattern is a one to one relationship.
 1. Delegate allows sending message from one object to another object.
 
-### 10010. What are clousures.. What is escaping and Non-Escaping?
+## 10010. What are clousures.. What is escaping and Non-Escaping?
 
 1. Closures are self-contained blocks of functionality that can be passed around and used in our code.
 
@@ -443,14 +441,14 @@ Example:
 
 . A non-escaping closure is a closure that’s called within the function it was passed into, i.e. before it returns. This closure never passes the bounds of the function it was passed into.
 
-### MVC vs MVVM
+## MVC vs MVVM
 
 1. MVC stands for model,view,controller where M represents model, V represents UI, C represents Controller.
 1. Data model is connected to view is through "Controller".
 1. In MVC Controller directly manipulates data in given model.
 1. In MVC View and Model doesn't need to know each other.
 
-#### Drawback:
+### Drawback:
 
 1. so when an application scales much larger and evolves into an operation with many related models, the amount of controllers used must grow.
 1. where do you put a service object that does HTTP networking? It’s certainly not a view. Is it a model? Nope. Is it a controller? Hmm.. . not really a controller either.
@@ -461,11 +459,11 @@ Example:
 1. Unlike mvc viewmodel is not a controller.it acts as binder that bind data between view and model.
 1. it allows view and model to communicate each other directly.
 
-#### Drawback:
+### Drawback:
 
 1. Because it relies on data binding, the ViewModel consumes a considerable amount of memory in comparison to it’s controlling counterparts.
 
-#### 10011. Multithreading and Concurrency:
+## 10011. Multithreading and Concurrency:
 
  How to achieve concurrency in iOS
 
@@ -474,7 +472,7 @@ we can achieve concurrency in two ways.
 1. Using Operations and OperationQueues.
 1. Using Grand Central Dispatch(GCD).
 
-#### GCD
+### GCD
 
 Grand Central Dispatch is a multi-threaded code without manually creating and managing the threads themselves.
 
@@ -482,28 +480,28 @@ GCD is built on top of threads. Under the hood it manages a shared thread pool. 
 
 1. GCD can improve your app’s responsiveness by helping you defer computationally expensive tasks and run them in the background.
 
-#### NSOperationQueue
+### NSOperationQueue
 
 NSOperationQueue regulates the concurrent execution of operations. It acts as a priority queue, such that operations are executed in a roughly First-In-First-Out manner, with higher-priority (NSOperation.queuePriority) ones getting to jump ahead of lower-priority ones. NSOperationQueue can also limit the maximum number of concurrent operations to be executed at any given moment, using the maxConcurrentOperationCount property.
 
-#### Sync vs Async
+### Sync vs Async
 
-##### Sync
+### Sync
 
 When your code reaches a sync statement, it will block the current queue until that task completes. Once the task returns/completes, control is returned to the caller, and the code that follows the sync task will continue.
 
-##### Async
+### Async
 
 An async statement, on the other hand, will execute asynchronously with respect to the current queue, and immediately returns control back to the caller without waiting for the contents of the async closure to execute. There is no guarantee as to when exactly the code inside that async closure will execute.
 
 
 
-#### What is Delegate pattern in iOS?
+## What is Delegate pattern in iOS?
 
 Delegate pattern is a variation of Observer pattern where only one object can observe events coming from another object. That effectively makes Delegate pattern a one-to-one relationship. Delegates are commonly used across iOS frameworks. Two of the arguably most commonly used examples would be and UITableViewDataSource. UITableViewDelegate These are both represented by a protocol that an object conforms to and UITable-View uses the single object it is provided with to send messages/events. Unlike with Observer pattern, there can be only one delegate object.
 
 
-#### What is Core Data?
+### What is Core Data?
 
 Core Data is one of the most popular frameworks provided by Apple for iOS and macOS apps. Core data is used to manage the model layer object in our application. You can treat Core Data as a framework to save, track, modify and filter the data within iOS apps, however, Core Data is not a Database.
 
@@ -655,15 +653,15 @@ As the name of the NSManagedObjectContextWillSaveNotification notification sugge
 ☄️Managed Object Context Did Save
 The managed object context performing the save operation posts an NSManagedObjectContextDidSaveNotification notification after successfully saving its changes.
 
-### 39. what is the Difference between core data and SQLite?
-## SQLite:
+## 39. what is the Difference between core data and SQLite?
+### SQLite:
 1. SQLite is database itself like we have SQL Server.
 1. Have Data Constraints features.
 1. Operates on data, store in Disk.
 1. Can Drop table and Edit data Without loading them in memory.
 1. Slow as Compared to core data.
 
-## CoreData:
+### CoreData:
 1. core data is ORM(Object graph model) which create a layer between the database and the UI. It speeds up the process of interaction as we don’t have to Write Queries, just work with ORM and let ORM handled the backend. For save or retrieval of large data because of it’s abilities to handle the less processing speed of the device.
 1. Don’t have Data Constraints if required need to implement by business logic.
 1. Operates on in memory(data needs to be loaded from disk to memory)
@@ -672,7 +670,7 @@ The managed object context performing the save operation posts an NSManagedObjec
 40. What is Transient Property?
 Transient properties are properties on an NSManagedObject that are not persisted t the object-store. They are calculated at runtime, usually on the basis of other property Values.
 
-### 41. What is a protocol?
+## 41. What is a protocol?
 ------------
 1. Protocol are declarations where a adapter should implement.
 1. A protocol has a method,properties & operators which a adapter can implement.
@@ -680,13 +678,13 @@ Transient properties are properties on an NSManagedObject that are not persisted
 1. By default everything in swift is required methods.
 
     
-42.### Classes vs Struct
+## Classes vs Struct
 ------------
 
-## Class:
+### Class:
 1. In class one file contains both interface and implementation files.
 1. memory is managed automatically.
 
-## Objective c
+### Objective c
 1. Obj C contains header files and Implementation files.
 1. Memory is managed manually
