@@ -655,24 +655,38 @@ As the name of the NSManagedObjectContextWillSaveNotification notification sugge
 ☄️Managed Object Context Did Save
 The managed object context performing the save operation posts an NSManagedObjectContextDidSaveNotification notification after successfully saving its changes.
 
-39. what is the Difference between core data and SQLite?
-SQLite:
-🌿 SQLite is database itself like we have SQL Server.
-🌿 Have Data Constraints features.
-🌿 Operates on data, store in Disk.
-🌿 Can Drop table and Edit data Without loading them in memory.
-🌿 Slow as Compared to core data.
-CoreData:
-🌱 core data is ORM(Object graph model) which create a layer between the database and the UI. It speeds up the process of interaction as we don’t have to Write Queries, just work with ORM and let ORM handled the backend. For save or retrieval of large data because of it’s abilities to handle the less processing speed of the device.
-🌱 Don’t have Data Constraints if required need to implement by business logic.
-🌱 Operates on in memory(data needs to be loaded from disk to memory)
-🌱 Need to load entire data if we need update drop table.
+### 39. what is the Difference between core data and SQLite?
+## SQLite:
+1. SQLite is database itself like we have SQL Server.
+1. Have Data Constraints features.
+1. Operates on data, store in Disk.
+1. Can Drop table and Edit data Without loading them in memory.
+1. Slow as Compared to core data.
+
+## CoreData:
+1. core data is ORM(Object graph model) which create a layer between the database and the UI. It speeds up the process of interaction as we don’t have to Write Queries, just work with ORM and let ORM handled the backend. For save or retrieval of large data because of it’s abilities to handle the less processing speed of the device.
+1. Don’t have Data Constraints if required need to implement by business logic.
+1. Operates on in memory(data needs to be loaded from disk to memory)
+1. Need to load entire data if we need update drop table.
 
 40. What is Transient Property?
 Transient properties are properties on an NSManagedObject that are not persisted t the object-store. They are calculated at runtime, usually on the basis of other property Values.
 
-41. What is a protocol?
-    1. Protocols are declarations which a adopter should implement.
-    2. A protocol has a methods,properties & operators which a adopter can implement.
-    3. Methods doesn't have any functionality,what ever the adaptor implements can use that and build functionality for  that method. 
-    4. By default everything in swift is required methods.
+### 41. What is a protocol?
+------------
+1. Protocol are declarations where a adapter should implement.
+1. A protocol has a method,properties & operators which a adapter can implement.
+1. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
+1. By default everything in swift is required methods.
+
+    
+42.### Classes vs Struct
+------------
+
+## Class:
+1. In class one file contains both interface and implementation files.
+1. memory is managed automatically.
+
+## Objective c
+1. Obj C contains header files and Implementation files.
+1. Memory is managed manually
