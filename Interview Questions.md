@@ -722,4 +722,10 @@ Transient properties are properties on an NSManagedObject that are not persisted
 1. Obj C contains header files and Implementation files.
 1. Memory is managed manually
 
----
+
+## How is memory management handled on iOS?
+
+1. Memory is managed in swift using ARC which is defined as automatic reference counting.
+2. By default all the references are strong references.
+3. With strong references you cant deallocate the memory.
+4. To overcome this, we use weak references.
