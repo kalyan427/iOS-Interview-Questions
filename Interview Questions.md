@@ -275,15 +275,15 @@ Detailed Description:
 in switch statements if any conditions is matched with the cases in switch statement then that particular case is executed.if any of the cases doesn't matches then default case will be executed.
 
 
-## Optional Chaining
-
-Optionals: ?
+## Optionals
 
 Forced Unwrapping: Exclamation mark ( ! ) is used to unwrap value.
 
-Optional chaining: Optional chaining is the way by which we try to retrieve a values from a chain of optional values
+Optional chaining: 
+1. if the optional contains a 'value’, then it returns the value.
+2. if the optional contains a 'nil' value, then it returns the nil.
 
-Optional Binding (If let) : You use optional binding to check if the optional contains a value or not. If it does contain a value, unwrap it and put it into a temporary constant or variable.
+Optional Binding (If let) : Other than forced unwrapping, optional binding is a simpler and recommended way to unwrap an optional. You use optional binding to check if the optional contains a value or not. If it does contain a value, unwrap it and put it into a temporary constant or variable.
 
 Guard: We use the guard statement to transfer program control out of scope when certain conditions are not met. The guard statement is similar to the if statement with one major difference. The if statement runs when a certain condition is met. However, the guard statement runs when a certain condition is not met.
 
