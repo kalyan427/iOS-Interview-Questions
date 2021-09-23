@@ -449,17 +449,6 @@ GCD is built on top of threads. Under the hood it manages a shared thread pool. 
 
 NSOperationQueue regulates the concurrent execution of operations. It acts as a priority queue, such that operations are executed in a roughly First-In-First-Out manner, with higher-priority (NSOperation.queuePriority) ones getting to jump ahead of lower-priority ones. NSOperationQueue can also limit the maximum number of concurrent operations to be executed at any given moment, using the maxConcurrentOperationCount property.
 
-#### Sync vs Async
-
-### Sync
-
-When your code reaches a sync statement, it will block the current queue until that task completes. Once the task returns/completes, control is returned to the caller, and the code that follows the sync task will continue.
-
-### Async
-
-An async statement, on the other hand, will execute asynchronously with respect to the current queue, and immediately returns control back to the caller without waiting for the contents of the async closure to execute. There is no guarantee as to when exactly the code inside that async closure will execute.
-
-
 
 ## What is Core Data?
 
