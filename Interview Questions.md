@@ -688,3 +688,15 @@ Transient properties are properties on an NSManagedObject that are not persisted
 1. Delegate is a design pattern where class or struct can pass there responsibilities to another instance.
 2. This design pattern can be implemented by defining protocol and confirming to there methods and properties.
 3. Where only one object can observe events coming from another object.Delegate pattern a one-to-one relationship.
+
+
+## What is VIPER architecture?
+
+VIPER is a backronym for View, Interactor, Presenter, Entity, and Router.
+
+1. View: The responsibility of the view is to send the user actions to the presenter and shows whatever the presenter tells it.
+2. Interactor: This is the backbone of an application as it contains the business logic.
+3. Presenter: Its responsibility is to get the data from the interactor on user actions and after getting data from the interactor, it sends it to the view to show it. It also asks the router/wireframe for navigation.
+4. Entity: It contains basic model objects used by the Interactor.
+5. Router: It has all navigation logic for describing which screens are to be shown when. It is normally written as a wireframe.
+
