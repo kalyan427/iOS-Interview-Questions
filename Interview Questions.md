@@ -353,20 +353,6 @@ kalyan.observe(\Person.name, options: .new) { (person, change) in
 kalyan.name = "abc"
 ```
 
-
-## What is Notification?
-
-It is used for one to many communication. for example if we change something that is being observed by the other methods all the methods which is susbcribed to it will change. 
-  Example: UIDeviceBatteryStateDidChangeNotification
-
-
-## What is the difference between Delegates and Notifications?
-
-1. Delegates create relationship between two classes. It supports two-way communication i.e. we can return the value and it also has a chance to modify or reject the operations as well. It checks protocol methods implementation at compile time. Only one designated object can listen the message. Similar to the telephonic conversation.
-2. Notification based on one to many communication. It cannot receive feedback and have no link between the objects to communicate back and forth. There is no compile time checking for method implementation. Any number of the object can receive the message.
-3. Delegates are usually a more appropriate way of handling things, especially if you're creating a framework for others to use. You gain compile time checking for required methods when you use protocols with your delegates, so you know when you compile if you're missing any required methods. With NSNotificationCenter you have no such guarantee.
-
-
 ## Enums in swift?
 
 1. Enumerations are defined with enum.
@@ -688,6 +674,18 @@ Transient properties are properties on an NSManagedObject that are not persisted
 1. A protocol has a method,properties & operators which a adapter can implement.
 1. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
 1. By default everything in swift is required methods.
+
+## What is Notification?
+
+It is used for one to many communication. for example if we change something that is being observed by the other methods all the methods which is susbcribed to it will change. 
+  Example: UIDeviceBatteryStateDidChangeNotification
+
+
+## What is the difference between Delegates and Notifications?
+
+1. Delegates create relationship between two classes. It supports two-way communication i.e. we can return the value and it also has a chance to modify or reject the operations as well. It checks protocol methods implementation at compile time. Only one designated object can listen the message. Similar to the telephonic conversation.
+2. Notification based on one to many communication. It cannot receive feedback and have no link between the objects to communicate back and forth. There is no compile time checking for method implementation. Any number of the object can receive the message.
+3. Delegates are usually a more appropriate way of handling things, especially if you're creating a framework for others to use. You gain compile time checking for required methods when you use protocols with your delegates, so you know when you compile if you're missing any required methods. With NSNotificationCenter you have no such guarantee.
 
 
 ## What is VIPER architecture?
