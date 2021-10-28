@@ -656,13 +656,6 @@ The managed object context performing the save operation posts an NSManagedObjec
 Transient properties are properties on an NSManagedObject that are not persisted t the object-store. They are calculated at runtime, usually on the basis of other property Values.
 
 
-## What is a protocol?
-
-1. Protocol are declarations where a adapter should implement.
-1. A protocol has a method,properties & operators which a adapter can implement.
-1. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
-1. By default everything in swift is required methods.
-
 
 ## Classes vs Struct
 
@@ -688,6 +681,13 @@ Transient properties are properties on an NSManagedObject that are not persisted
 1. Delegate is a design pattern where class or struct can pass there responsibilities to another instance.
 2. This design pattern can be implemented by defining protocol and confirming to there methods and properties.
 3. Where only one object can observe events coming from another object.Delegate pattern a one-to-one relationship.
+
+## What is a protocol?
+
+1. Protocol are declarations where a adapter should implement.
+1. A protocol has a method,properties & operators which a adapter can implement.
+1. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
+1. By default everything in swift is required methods.
 
 
 ## What is VIPER architecture?
