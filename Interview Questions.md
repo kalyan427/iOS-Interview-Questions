@@ -406,6 +406,14 @@ kalyan.name = "abc"
 ```
 
 
+### What are singletons and what's a good use case for them in iOS applications?
+
+1. Singletons are objects that created once and can be shared everywhere they can used.
+1. Singleton is a one class instance which you can access in your entire codebase.
+
+
+
+
 
 
 
