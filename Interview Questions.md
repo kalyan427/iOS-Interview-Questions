@@ -364,6 +364,10 @@ kalyan.name = "abc"
 2. A singleton class returns same instance how many times you request.
 3. A singleton object provides a global point of access to the resources of its class.
 4. Singleton is used where single point of control is desirable.
+5. Singletons are objects that created once and can be shared everywhere they can used.
+
+It is used for one to many communication. for example if we change something that is being observed by the other methods all the methods which is susbcribed to it will change. 
+Example: UIDeviceBatteryStateDidChangeNotification
 
 #### Disadvantages of singleton.
 
@@ -668,13 +672,7 @@ Transient properties are properties on an NSManagedObject that are not persisted
 3. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
 4. By default everything in swift is required methods.
 
-### What are singletons and what's a good use case for them in iOS applications?
-
-1. Singletons are objects that created once and can be shared everywhere they can used.
-2. Singleton is a one class instance which you can access in your entire codebase.
-
-It is used for one to many communication. for example if we change something that is being observed by the other methods all the methods which is susbcribed to it will change. 
-  Example: UIDeviceBatteryStateDidChangeNotification
+# 
 
 ## What is the difference between Delegates and Notifications?
 
@@ -691,3 +689,15 @@ VIPER is a backronym for View, Interactor, Presenter, Entity, and Router.
 3. Presenter: Its responsibility is to get the data from the interactor on user actions and after getting data from the interactor, it sends it to the view to show it. It also asks the router/wireframe for navigation.
 4. Entity: It contains basic model objects used by the Interactor.
 5. Router: It has all navigation logic for describing which screens are to be shown when. It is normally written as a wireframe.
+
+## **Computed Properties:**
+
+1. Computed properties are properties which do caluculation before returning the value.
+
+2. Stored properties can be variable or constant, Computed properties must be variable.
+
+3. Computed properties required type. So that compiler will know that what type a return value expected.
+
+4. Computed properties doesn't stored any value.
+
+5. Consider a example to know the screen inches. we will have width and height to caluculate screen inches we need caluculate the diagonal of the screen. Based on that we can find the inches of TV for this best way we use is computed properties and return a value.
