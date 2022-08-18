@@ -213,9 +213,7 @@ Detail Explaination:
 - transition between `viewDidLoad to viewDidAppear` in this process.`viewWillAppear` method is called.so whatever the conditions/things to show between in these transition.we can define in this method.
 - `viewDidAppear` this method is called once the intial methods are called.these method shows what ever the content need to display.
 - transition between `viewDidAppear to viewDidDisAppear` in this process.`viewWillDisAppear` method is called.so whatever the conditions/things to show between in these transition.we can define in this method.
-- `viewDidDisAppear` this method is called once the Appear method is called.these method shows what ever the content need to display before viewController changes to another viewController.
-
-# 
+- `viewDidDisAppear` this method is called once the Appear method is called.these method shows what ever the content need to display before viewController changes to another viewController. 
 
 ## Optionals
 
@@ -318,12 +316,6 @@ Example:
 
 1. UI Application.
 2. NSFile manager.
-
-## What is delegate pattern in iOS?
-
-1. Delegate pattern is the variation of the observer pattern.
-2. Delegate pattern is a one to one relationship.
-3. Delegate allows sending message from one object to another object.
 
 ## What are clousures.. What is escaping and Non-Escaping?
 
@@ -549,15 +541,19 @@ A Managed object model allows core data to map from records in a persistent stor
 ## How to synchronize contexts?
 
 The Core Data framework uses notifications to notify objects of changes taking place in a managed object context. Every managed object context posts three types of notifications to notify objects about the changes taking place in the managed object context:
-🌴 NSManagedObjectContextObjectsDidChangeNotification
-🌴 NSManagedObjectContextWillSaveNotification
-🌴 NSManagedObjectContextDidSaveNotification
-☄️ Managed Object Context Did Change
-The NSManagedObjectContextObjectsDidChangeNotification notification is broadcast every time a managed object in the managed object context changes. Every time a managed object is inserted, updated, or deleted from a managed object context, the managed object context posts an NSManagedObjectContextObjectsDidChangeNotification notification.
-☄️ Managed Object Context Will Save
-As the name of the NSManagedObjectContextWillSaveNotification notification suggests, this notification is posted before a save operation is performed.
-☄️Managed Object Context Did Save
-The managed object context performing the save operation posts an NSManagedObjectContextDidSaveNotification notification after successfully saving its changes.
+
+1. NSManagedObjectContextObjectsDidChangeNotification
+
+2. NSManagedObjectContextWillSaveNotification
+
+3. NSManagedObjectContextDidSaveNotification
+
+4. Managed Object Context Did Change
+   The NSManagedObjectContextObjectsDidChangeNotification notification is broadcast every time a managed object in the managed object context changes. Every time a managed object is inserted, updated, or deleted from a managed object context, the managed object context posts an NSManagedObjectContextObjectsDidChangeNotification notification.
+   ☄️ Managed Object Context Will Save
+   As the name of the NSManagedObjectContextWillSaveNotification notification suggests, this notification is posted before a save operation is performed.
+   ☄️Managed Object Context Did Save
+   The managed object context performing the save operation posts an NSManagedObjectContextDidSaveNotification notification after successfully saving its changes.
 
 ## what is the Difference between core data and SQLite?
 
@@ -580,18 +576,6 @@ The managed object context performing the save operation posts an NSManagedObjec
 
 Transient properties are properties on an NSManagedObject that are not persisted t the object-store. They are calculated at runtime, usually on the basis of other property Values.
 
-## Classes vs Struct
-
-#### Class:
-
-1. In class one file contains both interface and implementation files.
-2. memory is managed automatically.
-
-#### Objective c
-
-1. Obj C contains header files and Implementation files.
-2. Memory is managed manually
-
 ## How is memory management handled on iOS?
 
 1. Memory is managed in swift using ARC which is defined as automatic reference counting.
@@ -603,16 +587,16 @@ Transient properties are properties on an NSManagedObject that are not persisted
 
 1. Delegate is a design pattern where class or struct can pass there responsibilities to another instance.
 2. This design pattern can be implemented by defining protocol and confirming to there methods and properties.
-3. Where only one object can observe events coming from another object.Delegate pattern a one-to-one relationship.
+3. Where only one object can observe events coming from another object.Delegate pattern is a one-to-one relationship.
+4. Delegate pattern is the variation of the observer pattern.
+5. Delegate allows sending message from one object to another object.
 
 ## What is a protocol?
 
 1. Protocol are declarations where a adapter should implement.
 2. A protocol has a method,properties & operators which a adapter can implement.
 3. Methods doesn't have any functionality.What ever the adapter implements can use and build functionality for that method.
-4. By default everything in swift is required methods.
-
-# 
+4. By default everything in swift is required methods. 
 
 ## What is the difference between Delegates and Notifications?
 
